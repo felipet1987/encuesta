@@ -40,7 +40,7 @@ public class EncuestaController {
     private static int getCount(List<EncuestaDao> results, EncuestaDao g) {
         return (int) results.stream()
                 .filter(r -> r.getGenero().equals(g.getGenero()))
-                .count();;
+                .count();
     }
     private static GeneroResponse map(List<EncuestaDao> results, EncuestaDao g) {
         return GeneroResponse.builder()
